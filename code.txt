@@ -1,0 +1,23 @@
+Code
+Program A – Default frequency on Pin 3
+void setup()
+ {
+pinMode(3,155); 
+TCCR2B = TCCR2B & B11111000 | B00000001; // for PWM frequency of 31372.55 Hz
+}
+void loop()
+ {
+analogWrite(3,155);
+TCCR2B = TCCR2B & B11111000 | B00000001; // for PWM frequency of 31372.55 Hz
+}
+Program B – Changed frequency on Pin 3
+void setup()
+ {
+pinMode(3,155);
+TCCR2B = TCCR2B & B11111000 | B00000001; // for PWM frequency of 31372.55 Hz
+}
+void loop() 
+{
+analogWrite(3,155);
+TCCR2B = TCCR2B & B11111000 | B00000001; // for PWM frequency of 31372.55 Hz
+}
